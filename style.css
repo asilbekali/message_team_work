@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.registration {
+  width: 500px;
+  height: 600px;
+  background-color: white;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px,
+    rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 15px;
+}
+
+.register-image img {
+    width: 50%;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.register-image {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.register {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.register input {
+    width: 450px;
+    height: 50px;
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    border-radius: 5px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.register button {
+    width: 450px;
+    height: 50px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.password-input {
+    position: relative;
+}
+
+.eyes {
+    position: absolute;
+    top: 490px;
+    right: 555px;
+    font-size: 20px;
+}
