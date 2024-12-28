@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: lightblue;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+.registration {
+  width: 500px;
+  height: 600px;
+  /* background-color: rgb(223, 221, 221); */
+  background-color: whitesmoke;
+  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  margin: auto;
+  margin-top: 50px;
+  border-radius: 15px;
+}
+
+.register-image img {
+  width: 50%;
+  border-radius: 50%;
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+.register-image {
+  text-align: center;
+}
+
+.register {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.register input {
+  width: 450px;
+  height: 50px;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  padding-left: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.register input:focus {
+  border: 2px solid black;
+}
+
+.register button {
+  width: 450px;
+  height: 50px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  background-color: blue;
+  cursor: pointer;
+}
+
+.register button:hover {
+  background-color: darkblue;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.password-input {
+  position: relative;
+}
+
+.eyes {
+  position: absolute;
+  top: 510px;
+  right: 555px;
+  font-size: 20px;
+}
