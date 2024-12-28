@@ -15,7 +15,7 @@ function getData(api) {
             if (res.some(item => item.name === userName.value) && res.some( item => item.password === passwordUser.value)) {
                 console.log("Foydalanuvchi topildi!");
             } else {
-                console.log("Foydalanuvchi topilmadi!");
+                window.location.href = "./index.html"
             }
         },
         (error) => {
