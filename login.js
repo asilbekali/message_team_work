@@ -12,7 +12,7 @@ function getData(api) {
             let res = apiData.data;
             console.log("API Ma'lumotlari:", res);
 
-            if (res.some(item => item.name === userName.value)) {
+            if (res.some(item => item.name === userName.value) && res.some( item => item.password === passwordUser.value)) {
                 console.log("Foydalanuvchi topildi!");
             } else {
                 console.log("Foydalanuvchi topilmadi!");
