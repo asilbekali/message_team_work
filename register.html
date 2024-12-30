@@ -1,26 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./register.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./register.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
     <title>Registration Page</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container">
-        <div class="registration">
-            <div class="register-image">
-                <img src="./images/register-image2.png" alt="register image">
-            </div>
-            <form class="register" action="" method="get">
-                <input class="fullname-input" id="fullname-input" type="text" placeholder="Fullname" required>
-                <input class="email-input" id="email-input" type="email" placeholder="Username" required>
-                <input class="password-input" id="password-input" type="password" placeholder="Password" required>
-                <i class="fa-solid fa-eye eyes" id="password-eyes"></i>
-                <button class="signUp-button" type="submit">Sign up</button>
-            </form>
+      <div class="registration">
+        <div class="register-image">
+          <img src="./images/register-image2.png" alt="register image" />
         </div>
+        <form class="register" action="" method="get">
+          <input
+            class="fullname-input"
+            id="fullname-input"
+            type="text"
+            placeholder="Fullname"
+            required />
+          <input
+            class="email-input"
+            id="email-input"
+            type="email"
+            placeholder="Username"
+            required />
+          <input
+            class="password-input"
+            id="password-input"
+            type="password"
+            placeholder="Password"
+            required />
+          <i class="fa-solid fa-eye eyes" id="password-eyes"></i>
+          <a target="_blank" href="./main.html"
+            ><button id="signUp" class="signUp-button" type="button">
+              Sign up
+            </button></a
+          >
+        </form>
+      </div>
     </div>
-</body>
+    <script src="./registration.js"></script>
+  </body>
 </html>

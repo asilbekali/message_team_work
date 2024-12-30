@@ -1,13 +1,24 @@
-const { default: axios } = require("axios")
+const fullNameInput = document.getElementById("fullname-input");
+const emalInput = document.getElementById("email-input");
+const passwordInput = document.getElementById("password-input");
+const signUpbtn = document.getElementById("signUp");
+const passwordEye = document.getElementById("password-eyes");
 
-let Uname = document.querySelector(".fullname-input")
-let Euser = document.querySelector(".email-input")
+passwordEye.addEventListener("click", (e) => {
+  console.log(e.target);
+});
 
-function setData(api){
-    axios.get(api).then(
-        (setD) =>{
-            let setDa = setD.data
-            console.log("Set")
-        }
-    )
-}
+signUpbtn.addEventListener("click", (e) => {
+  if (
+    fullNameInput.value === "" ||
+    emalInput.value === "" ||
+    passwordInput.value === ""
+  ) {
+    alert("Iltimos barcha ma'lumotlaringizni kiriting!");
+  } else {
+    alert("Muvaffaqiyatli ro'yxatdan o'ttingiz!");
+    fullNameInput.value = "";
+    emalInput.value = "";
+    passwordInput.value = "";
+  }
+});
