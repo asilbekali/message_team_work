@@ -6,7 +6,7 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  background-color: lightblue;
+  background-color: white;
 }
 
 .container {
@@ -17,7 +17,6 @@ body {
 .registration {
   width: 500px;
   height: 600px;
-  /* background-color: rgb(223, 221, 221); */
   background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
   margin: auto;
@@ -53,7 +52,7 @@ body {
   font-size: 18px;
   padding-left: 10px;
   border-radius: 5px;
-  border: 1px solid #ccc;
+  border: 1px solid lightgray;
 }
 
 .register input:focus {

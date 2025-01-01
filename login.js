@@ -1,5 +1,6 @@
 let userName = document.querySelector(".nameUser");
 let passwordUser = document.querySelector(".userPassword");
+let passwordEye = document.getElementById('password-eyes');
 
 function handleSubmit(event) {
     event.preventDefault(); 
@@ -17,9 +18,25 @@ function getData(api) {
             } else {
                 window.location.href = "./index.html"
             }
+
+            userName.value = "";
+            passwordUser.value = "";
         },
         (error) => {
             console.error("API xatosi:", error);
         }
     );
 }
+
+passwordEye.addEventListener('click', function () {
+    if(passwordUser.type === "password") {
+        passwordUser.type = "text"
+        passwordEye.classList.remove('fa-eye');
+        passwordEye.classList.add('fa-eye-slash');
+    } else {
+        passwordUser.type = "password";
+        passwordEye.classList.remove('fa-eye-slash');
+        passwordEye.classList.add('fa-eye');
+    }
+});
+

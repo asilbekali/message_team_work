@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
 </head>
 <body>
     <div class="container">
@@ -13,13 +19,16 @@
                 <img src="https://cdn3.iconfinder.com/data/icons/essential-rounded/64/Rounded-31-512.png" alt="Error">
             </div>
             <form class="input-box" onsubmit="handleSubmit(event)">
-                <input class="nameUser" type="text" name="username" placeholder="Enter user name" required>
+                <input class="nameUser" type="text" name="username" placeholder="Enter username" required>
                 <input class="userPassword" type="password" name="password" placeholder="Enter password" required>
                 <button type="submit">LOGIN</button>
+                <i class="fa-solid fa-eye eyes" id="password-eyes"></i>
             </form>
         </div>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script src="./registration.js"></script>
+    <!-- <script src="./registration.js"></script> -->
+
+    <script src="./login.js"></script>
 </body>
 </html>
