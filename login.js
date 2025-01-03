@@ -16,7 +16,7 @@ function getData(api) {
             if (res.some(item => item.name === userName.value) && res.some( item => item.password === passwordUser.value)) {
                 console.log("Foydalanuvchi topildi!");
             } else {
-                window.location.href = "./index.html"
+                window.location.href = "./register.html"
             }
 
             userName.value = "";
